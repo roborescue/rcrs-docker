@@ -23,3 +23,7 @@ After the first running it will create default folders named `map` and `agent-co
 You can easily changes or put your code inside agent-code. It should contain `compile.sh` and `launch.sh`
 Agent logs and server logs will be stored in the `log` folder.
 
+
+## run python agent version
+
+Please uncomment to python part in the docker-compose.yml file and comment the java part.

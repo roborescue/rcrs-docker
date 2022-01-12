@@ -17,7 +17,7 @@ services:
 #        env-file: 
 #            - rcrs.env     
 
-    agent:
+    java_agent:
         depends_on: rcrs_server
         image: ./java-agent/
         volumes:
@@ -25,3 +25,13 @@ services:
             - ./logs/agent/:/logs/ 
         env-file: 
             - rcrs.env  
+            
+# Uncomment if you want to develop in python just uncomment the following lines and comment java_agent
+#    python_agent:
+#        depends_on: rcrs_server
+#        image: ./python-agent/
+#        volumes:
+#            - ./agent-code/:/agent/
+#            - ./logs/agent/:/logs/ 
+#        env-file: 
+#            - rcrs.env              
