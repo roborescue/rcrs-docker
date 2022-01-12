@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+    rcrs_server:
+        image: ./rcrs_server/
+        volumes:
+            - ./map/:/map/:ro
+            - ./logs/server/:/logs/
+        env-file: 
+            - rcrs.env
+
+#comming soon
+#    web_viewer:
+#        depends_on: rcrs_server
+#        image: roborescue:rcrs-web-viewer
+#        env-file: 
+#            - rcrs.env     
+
+    agent:
+        depends_on: rcrs_server
+        image: ./java-agent/
+        volumes:
+            - ./agent-code/:/agent/
+            - ./logs/agent/:/logs/ 
+        env-file: 
+            - rcrs.env  
