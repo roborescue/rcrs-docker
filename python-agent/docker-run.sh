@@ -2,7 +2,6 @@
 
 MODE=${RUN_MODE:-NO_PRECOMPUTE}
 
-sh compile.sh
 case "$MODE" in
       NO_PRECOMPUTE)
         sh launch.sh -all
