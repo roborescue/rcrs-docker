@@ -8,6 +8,7 @@ case "$MODE" in
 		;;
       WITH_PRECOMPUTE)
         sh launch.sh -allp -h rcrs_server
+		sleep 20
         sh launch.sh -all -h rcrs_server
 	  *)
         echo "Unrecognized option: $MODE"
