@@ -31,3 +31,9 @@ or you can run the following command
 ```
 docker-compose -f docker-compose.python.yml up
 ```
+
+
+## TODO
+[ ] install the requirments in the python version 
+[ ] add web viewer
+[ ] complete WITH_PRECOMPUTE option
