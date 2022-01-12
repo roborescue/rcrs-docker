@@ -7,7 +7,9 @@ Please install [docker](https://docs.docker.com/get-docker/) and [docker-compose
 
   
 You can easily run the simulator by cloning this repository and run the following code:
-```docker-compose up```
+```
+docker-compose up
+```
 
 inorder to change the map you can easily change `rcrs.env` information.
 ```
