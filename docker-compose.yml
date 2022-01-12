@@ -2,6 +2,7 @@ version: '3'
 
 services:
     rcrs_server:
+        hostname: rcrs_server
         image: ./rcrs_server/
         volumes:
             - ./map/:/map/:ro

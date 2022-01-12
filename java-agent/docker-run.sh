@@ -5,11 +5,11 @@ MODE=${RUN_MODE:-NO_PRECOMPUTE}
 sh compile.sh
 case "$MODE" in
       NO_PRECOMPUTE)
-        sh launch.sh -all
+        sh launch.sh -all -h rcrs_server
 		;;
       WITH_PRECOMPUTE)
-        sh launch.sh -allp
-        sh launch.sh -all
+        sh launch.sh -allp -h rcrs_server
+        sh launch.sh -all -h rcrs_server
 	  *)
         echo "Unrecognized option: $MODE"
         exit 1
