@@ -27,3 +27,7 @@ Agent logs and server logs will be stored in the `log` folder.
 ## run python agent version
 
 Please uncomment to python part in the docker-compose.yml file and comment the java part.
+or you can run the following command 
+```
+docker-compose -f docker-compose.python.yml up
+```
